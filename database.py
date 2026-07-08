@@ -38,7 +38,7 @@ class Database:
     
     def __init__(self):
         """Khởi tạo Database."""
-        self.db_path = config.DATABASE_PATH
+        self.db_path = config.DATABASE_FILE
         self.lock = Lock()
         self._ensure_db_exists()
         self._initialize_schema()
